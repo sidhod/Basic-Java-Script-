@@ -66,3 +66,13 @@ function show() {
 }
 show();
 console.log("outside:", xy);
+
+// //syncronise
+console.log("hi");
+console.log("Sidhodhan");
+console.log("Kamble");
+
+//Asyncronise
+console.log("hi");
+setTimeout(function () { console.log("Sai") }, 3000);
+console.log("Kamble");
