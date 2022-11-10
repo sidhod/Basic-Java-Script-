@@ -76,3 +76,19 @@ console.log("Kamble");
 console.log("hi");
 setTimeout(function () { console.log("Sai") }, 3000);
 console.log("Kamble");
+
+//callback
+const addition1 = function (a, b, callback) {
+    callback(a + b)
+}
+addition1(1, 2, (Sum1) => {
+    addition1(4, Sum1, (Sum2) => {
+        addition1(5, Sum2, (Sum3) => {
+            addition1(2, Sum3, (Sum4) => {
+
+                console.log(`Sum of numbers using callback is ${Sum4}`);
+
+            })
+        })
+    })
+})
