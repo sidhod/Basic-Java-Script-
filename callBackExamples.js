@@ -48,3 +48,15 @@ function checkPassword(password) {
 // calling the function after 2 seconds
 //Pass username password and callbackfunction
 setTimeout(checkUserName, 2000, "Sidhodhan", "Pass@123", checkPassword);
+
+// Callback Function Example No 4
+const add = function (a, b, callback) {
+    console.log("First Show add message: ")
+    //callback Fuction
+    callback(a, b)
+}
+
+function sum(a, b) {
+    console.log("addition:", a + b);
+}
+add(1, 2, sum)
