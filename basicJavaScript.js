@@ -26,3 +26,43 @@ let additionH = p + q;
 console.log("addition", additionH)
 var p;
 var q;
+
+
+// var let, let and const
+//var--
+var x = 5;
+function show() {
+
+    console.log("in Function", x);
+    {
+
+        console.log("inside the block:", x);
+    }
+}
+show();
+
+console.log("Outside", x);
+
+//let
+
+function show() {
+    let y = 5;
+    console.log("in Function", y);
+    {
+
+        console.log("inside the block:", y);
+    }
+}
+show();
+
+//const---
+const xy = 5;
+function show() {
+    const xy = 5;
+    console.log("in Function", xy);
+    {
+        console.log("inside the block:", xy);
+    }
+}
+show();
+console.log("outside:", xy);
