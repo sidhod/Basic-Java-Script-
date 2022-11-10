@@ -18,3 +18,11 @@ let addi = (a, b, c) => {
     console.log("arrow function addition", a + b + c);
 }
 addi(10, 20, 30);
+
+//hoisting: 
+p = 5;
+q = 10;
+let additionH = p + q;
+console.log("addition", additionH)
+var p;
+var q;
